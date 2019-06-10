@@ -78,6 +78,10 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.25;
   }
 
+  span {
+    font-family: inherit;
+  }
+  
   p {
     font-family: ${({theme}) => theme.font.body};
     font-weight: 300;

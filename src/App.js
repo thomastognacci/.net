@@ -5,6 +5,7 @@ import {theme} from "./styles/theme";
 import {GlobalStyle} from "./styles/GlobalStyles";
 import {StyledApp} from "./styles/StyledApp";
 import {StyledBlockList} from "./styles/StyledBlockList";
+import {StyledIntro} from "./styles/StyledIntro";
 import Block from "./Block";
 
 const App = ({className}) => {
@@ -22,18 +23,20 @@ const App = ({className}) => {
             />
           </svg>
         </header>
-        <div className="main-content">
+        <StyledIntro>
           <h1>Hi, I'm Thomas</h1>
           <h2>
             Front-End Developer in the making<span className="blink">|</span>
           </h2>
-
-          <p className="intro">
+          <span className="current-location">
+            <img className="pin" src="/img/place.svg" alt="Current Location" /> Nice, France
+          </span>
+          <p className="intro-copy">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, odit voluptatem, provident
             tempora ipsa temporibus itaque iusto illo, minima officiis recusandae et quisquam in
             nulla similique ratione molestias neque doloribus?
           </p>
-        </div>
+        </StyledIntro>
         <StyledBlockList>
           <Block title="frontEnd" accent={theme.color.purple}>
             <li>HTML</li>
